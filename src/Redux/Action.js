@@ -1,7 +1,14 @@
 export const Add = (payload) => {
-  return {
-    type: "ADD",
-    payload
+  return (dispatch) => {
+    // Perform asynchronous tasks here
+    // For example, you can make an API call before dispatching the actual action
+    setTimeout(() => {
+      console.log("Hello");
+    }, 5000);
+    dispatch({
+      type: "ADD",
+      payload
+    });
   };
 };
 

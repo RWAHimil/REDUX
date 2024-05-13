@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
 import { Add } from "./Action";
 
 function Input() {
@@ -11,6 +11,8 @@ function Input() {
     e.preventDefault();
     e.target.reset();
   }
+
+  // Rest of your component code
   return (
     <div>
       <h1>Input</h1>
